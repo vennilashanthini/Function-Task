@@ -109,6 +109,55 @@ const removeDuplicates = function (arr) {
             unique.push(arr[i]);
             console.log(unique);
         }
+
+//Anonymous Function
+//Return Palindrome
+let num = 55;
+let rev =0;
+let temp = num;
+
+  var palindrome= function (num){{
+   
+    let rem = num%10;
+    rev = rev+rem;
+    num = parseInt(num/10);
+    num = (rev*10)+num;
+    
+}
+if(num===temp){
+    console.log(num);
+}
+else {
+    console.log("not a palindrome");
+}
+    
+ }
+
+palindrome(55);
+
+
+//IIFE
+//Return a palindrome
+(function palindrome (num){{
+    let num = 55;
+let rev =0;
+let temp = num;
+   
+    let rem = num%10;
+    rev = rev+rem;
+    num = parseInt(num/10);
+    num = (rev*10)+num;
+    
+}
+if(num===temp){
+    console.log(num);
+}
+else {
+    console.log("not a palindrome");
+}
+    
+ })(55);
+        
         
     }
     
